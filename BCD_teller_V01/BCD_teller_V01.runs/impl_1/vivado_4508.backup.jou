@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.2
+# SW Build 932637 on Wed Jun 11 13:24:38 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Thu Apr 13 17:09:43 2017
+# Process ID: 4184
+# Log file: V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/_Project/8BCD_005_teller-mux-samen/8BCD_005_teller-mux-samen.runs/impl_1/Eight_Digit_BCD_teller.vdi
+# Journal file: V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/_Project/8BCD_005_teller-mux-samen/8BCD_005_teller-mux-samen.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Eight_Digit_BCD_teller.tcl -notrace
