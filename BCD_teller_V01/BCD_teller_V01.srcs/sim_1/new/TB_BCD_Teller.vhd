@@ -3,8 +3,8 @@ library ieee;
 use ieee.std_logic_1164.all;
 
 entity testbench is 
-    generic (   TB_Dist1 : natural := 250_000;
-                TB_Dist2 : natural := 50_000_000 );
+    generic (   TB_Dist1 : natural := 25;
+                TB_Dist2 : natural := 50 );
 end entity;
 
 architecture TB_teller of testbench is

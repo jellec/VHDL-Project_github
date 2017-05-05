@@ -1,0 +1,26 @@
+Vivado Simulator 2014.2
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.2/bin/unwrapped/win32.o/xelab.exe --debug typical --relax --maxdelay --generic_top TB_Dist1=10 --generic_top TB_Dist2=20 -L xil_defaultlib -L simprims_ver -L secureip --snapshot testbench_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 --prj V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V01/BCD_teller_V01.sim/sim_1/synth/timing/testbench.prj xil_defaultlib.testbench xil_defaultlib.glbl 
+Multi-threading is on. Using 3 slave threads.
+Determining compilation order of HDL files.
+INFO: [VRFC 10-165] Analyzing Verilog file "V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V01/BCD_teller_V01.sim/sim_1/synth/timing/testbench_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DEMUX
+INFO: [VRFC 10-311] analyzing module Eight_Digit_BCD_teller
+INFO: [VRFC 10-311] analyzing module MUX
+INFO: [VRFC 10-311] analyzing module Scan_teller
+INFO: [VRFC 10-311] analyzing module Segment
+INFO: [VRFC 10-311] analyzing module enkele_Teller
+INFO: [VRFC 10-311] analyzing module enkele_Teller_0
+INFO: [VRFC 10-311] analyzing module enkele_Teller_1
+INFO: [VRFC 10-311] analyzing module enkele_Teller_2
+INFO: [VRFC 10-311] analyzing module enkele_Teller_3
+INFO: [VRFC 10-311] analyzing module enkele_Teller_4
+INFO: [VRFC 10-311] analyzing module enkele_Teller_5
+INFO: [VRFC 10-311] analyzing module enkele_Teller_6
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V01/BCD_teller_V01.srcs/sim_1/new/TB_BCD_Teller.vhd" into library xil_defaultlib
+ERROR: [VRFC 10-719] formal port/generic <dist1> is not declared in <\Eight_Digit_BCD_teller\> [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V01/BCD_teller_V01.srcs/sim_1/new/TB_BCD_Teller.vhd:53]
+ERROR: [VRFC 10-719] formal port/generic <test> is not declared in <\Eight_Digit_BCD_teller\> [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V01/BCD_teller_V01.srcs/sim_1/new/TB_BCD_Teller.vhd:60]
+ERROR: [VRFC 10-704] formal cnt_dwn has no actual or default value [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V01/BCD_teller_V01.srcs/sim_1/new/TB_BCD_Teller.vhd:52]
+ERROR: [VRFC 10-1504] unit tb_teller ignored due to previous errors [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V01/BCD_teller_V01.srcs/sim_1/new/TB_BCD_Teller.vhd:10]
+INFO: [VRFC 10-240] VHDL file V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V01/BCD_teller_V01.srcs/sim_1/new/TB_BCD_Teller.vhd ignored due to errors
