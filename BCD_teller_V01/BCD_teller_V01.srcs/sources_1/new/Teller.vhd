@@ -28,6 +28,7 @@ begin
     begin
         if tel_rst = '1' then
             temp1 := "0000";
+            carry_out <= '0';
         else
             if rising_edge(count_in) then   -- telpuls
                 if cnt_dwn = '0' then   --optellen

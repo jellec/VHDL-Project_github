@@ -3,8 +3,8 @@ library ieee;
 use ieee.std_logic_1164.all;
 
 entity testbench is 
-    generic (   TB_Dist1 : natural := 25;
-                TB_Dist2 : natural := 50 );
+    generic (   TB_Dist1 : natural := 1;
+                TB_Dist2 : natural := 2 );
 end entity;
 
 architecture TB_teller of testbench is
@@ -39,12 +39,12 @@ begin
 
   main: process
   begin
-    rst <='1';
+    rst <='0';
     tel_rst <='1';
     wait for PERIOD;
-    rst <='0';
+    rst <='1';
     tel_rst <='0';
-    wait for 1000 ns; 
+    wait for 3000 ns; 
     EndOfSimulation <= True;
     wait;
   end process;

@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2014.2 (win32) Build 932637 Wed Jun 11 13:24:38 MDT 2014
-| Date             : Thu Apr 13 17:11:17 2017
+| Date             : Sat May 06 14:30:33 2017
 | Host             : JELLECOREMA4D78 running 32-bit major release  (build 7600)
 | Command          : report_power -file Eight_Digit_BCD_teller_power_routed.rpt -pb Eight_Digit_BCD_teller_power_summary_routed.pb
 | Design           : Eight_Digit_BCD_teller
@@ -51,15 +51,15 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        1 |       --- |             --- |
-| Slice Logic    |    <0.001 |      413 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      164 |     63400 |            0.25 |
+| Slice Logic    |    <0.001 |      399 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      157 |     63400 |            0.24 |
 |   CARRY4       |    <0.001 |       36 |     15850 |            0.22 |
 |   Register     |    <0.001 |      144 |    126800 |            0.11 |
 |   BUFG         |    <0.001 |        1 |        32 |            3.12 |
 |   F7/F8 Muxes  |    <0.001 |        4 |     63400 |           <0.01 |
-|   Others       |     0.000 |       19 |       --- |             --- |
-| Signals        |    <0.001 |      206 |       --- |             --- |
-| I/O            |     0.012 |       21 |       210 |           10.00 |
+|   Others       |     0.000 |       12 |       --- |             --- |
+| Signals        |    <0.001 |      199 |       --- |             --- |
+| I/O            |     0.012 |       23 |       210 |           10.95 |
 | Static Power   |     0.097 |          |           |                 |
 | Total          |     0.110 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+

@@ -1,0 +1,64 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.2 (win32) Build 932637 Wed Jun 11 13:24:38 MDT 2014
+| Date         : Sat May 06 18:49:38 2017
+| Host         : JELLECOREMA4D78 running 32-bit major release  (build 7600)
+| Command      : report_control_sets -verbose -file Eight_Digit_BCD_teller_control_sets_placed.rpt
+| Design       : Eight_Digit_BCD_teller
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    11 |
+| Minimum Number of register sites lost to control set restrictions |    32 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               7 |            2 |
+| No           | No                    | Yes                    |             106 |           28 |
+| No           | Yes                   | No                     |              31 |            8 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------+---------------+------------------------------+------------------+----------------+
+|             Clock Signal             | Enable Signal |       Set/Reset Signal       | Slice Load Count | Bel Load Count |
++--------------------------------------+---------------+------------------------------+------------------+----------------+
+|  Scan_teller/count_out               |               | tel_rst_IBUF                 |                1 |              5 |
+|  mux/tellers[0].eerste.tel/carry_out |               | tel_rst_IBUF                 |                1 |              5 |
+|  mux/tellers[1].andere.tel/carry_out |               | tel_rst_IBUF                 |                1 |              5 |
+|  mux/tellers[2].andere.tel/carry_out |               | tel_rst_IBUF                 |                1 |              5 |
+|  mux/tellers[3].andere.tel/carry_out |               | tel_rst_IBUF                 |                2 |              5 |
+|  mux/tellers[4].andere.tel/carry_out |               | tel_rst_IBUF                 |                1 |              5 |
+|  mux/tellers[5].andere.tel/carry_out |               | tel_rst_IBUF                 |                2 |              5 |
+|  mux/tellers[6].andere.tel/carry_out |               | tel_rst_IBUF                 |                2 |              5 |
+|  Scan_teller/scan_out                |               |                              |                2 |              7 |
+|  Scan_teller/scan_out                |               | mux/n_0_count[0]_i_1         |                8 |             31 |
+|  clk_IBUF_BUFG                       |               | Scan_teller/n_0_scan_out_i_2 |               17 |             66 |
++--------------------------------------+---------------+------------------------------+------------------+----------------+
+
+

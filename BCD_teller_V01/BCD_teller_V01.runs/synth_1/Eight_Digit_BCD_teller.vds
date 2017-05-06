@@ -2,38 +2,32 @@
 # Vivado v2014.2
 # SW Build 932637 on Wed Jun 11 13:24:38 MDT 2014
 # IP Build 924643 on Fri May 30 09:20:16 MDT 2014
-# Start of session at: Thu Apr 13 17:08:56 2017
-# Process ID: 6112
-# Log file: V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/_Project/8BCD_005_teller-mux-samen/8BCD_005_teller-mux-samen.runs/synth_1/Eight_Digit_BCD_teller.vds
-# Journal file: V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/_Project/8BCD_005_teller-mux-samen/8BCD_005_teller-mux-samen.runs/synth_1\vivado.jou
+# Start of session at: Sat May 06 14:28:14 2017
+# Process ID: 5488
+# Log file: V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V01/BCD_teller_V01.runs/synth_1/Eight_Digit_BCD_teller.vds
+# Journal file: V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V01/BCD_teller_V01.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source Eight_Digit_BCD_teller.tcl
 # set_param gui.test TreeTableDev
-# set_param xicom.use_bs_reader 1
 # set_msg_config -id {HDL 9-1061} -limit 100000
 # set_msg_config -id {HDL 9-1654} -limit 100000
-# set_msg_config -id {Labtools 27-147} -limit 4294967295
 # create_project -in_memory -part xc7a100tcsg324-1
-CRITICAL WARNING: [Board 49-4] Problem parsing board_part file - C:/Xilinx/Vivado/2014.2/data/boards/board_parts/kintex7/kc705/0.9/board_part.xml, The board part 'xc7k325tffg900-2' is either not supported or invalid.
-CRITICAL WARNING: [Board 49-4] Problem parsing board_part file - C:/Xilinx/Vivado/2014.2/data/boards/board_parts/kintex7/kc705/1.0/board_part.xml, The board part 'xc7k325tffg900-2' is either not supported or invalid.
-CRITICAL WARNING: [Board 49-4] Problem parsing board_part file - C:/Xilinx/Vivado/2014.2/data/boards/board_parts/zynq/zc706/0.9/board_part.xml, The board part 'xc7z045ffg900-2' is either not supported or invalid.
-CRITICAL WARNING: [Board 49-4] Problem parsing board_part file - C:/Xilinx/Vivado/2014.2/data/boards/board_parts/zynq/zc706/1.0/board_part.xml, The board part 'xc7z045ffg900-2' is either not supported or invalid.
 # set_property target_language VHDL [current_project]
 # set_param project.compositeFile.enableAutoGeneration 0
 # set_property default_lib xil_defaultlib [current_project]
 # read_vhdl -library xil_defaultlib {
-#   V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/_Project/8BCD_005_teller-mux-samen/8BCD_005_teller-mux-samen.srcs/sources_1/new/Teller.vhd
-#   V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/_Project/8BCD_005_teller-mux-samen/8BCD_005_teller-mux-samen.srcs/sources_1/new/Segment.vhd
-#   V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/_Project/8BCD_005_teller-mux-samen/8BCD_005_teller-mux-samen.srcs/sources_1/new/Scan_teller.vhd
-#   V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/_Project/8BCD_005_teller-mux-samen/8BCD_005_teller-mux-samen.srcs/sources_1/new/MUX.vhd
-#   V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/_Project/8BCD_005_teller-mux-samen/8BCD_005_teller-mux-samen.srcs/sources_1/new/DEMUX.vhd
-#   V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/_Project/8BCD_005_teller-mux-samen/8BCD_005_teller-mux-samen.srcs/sources_1/new/8Digit_BCD_teller.vhd
+#   V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V01/BCD_teller_V01.srcs/sources_1/new/Teller.vhd
+#   V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V01/BCD_teller_V01.srcs/sources_1/new/Segment.vhd
+#   V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V01/BCD_teller_V01.srcs/sources_1/new/Scan_teller.vhd
+#   V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V01/BCD_teller_V01.srcs/sources_1/new/MUX.vhd
+#   V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V01/BCD_teller_V01.srcs/sources_1/new/DEMUX.vhd
+#   V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V01/BCD_teller_V01.srcs/sources_1/new/8Digit_BCD_teller.vhd
 # }
-# read_xdc V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/_Project/8BCD_005_teller-mux-samen/8BCD_005_teller-mux-samen.srcs/constrs_1/imports/Downloads/Nexys4_Master.xdc
-# set_property used_in_implementation false [get_files V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/_Project/8BCD_005_teller-mux-samen/8BCD_005_teller-mux-samen.srcs/constrs_1/imports/Downloads/Nexys4_Master.xdc]
+# read_xdc V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V01/BCD_teller_V01.srcs/constrs_1/imports/Downloads/Nexys4_Master.xdc
+# set_property used_in_implementation false [get_files V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V01/BCD_teller_V01.srcs/constrs_1/imports/Downloads/Nexys4_Master.xdc]
 # set_param synth.vivado.isSynthRun true
-# set_property webtalk.parent_dir V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/_Project/8BCD_005_teller-mux-samen/8BCD_005_teller-mux-samen.cache/wt [current_project]
-# set_property parent.project_dir V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/_Project/8BCD_005_teller-mux-samen [current_project]
+# set_property webtalk.parent_dir V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V01/BCD_teller_V01.cache/wt [current_project]
+# set_property parent.project_dir V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V01 [current_project]
 # catch { write_hwdef -file Eight_Digit_BCD_teller.hwdef }
 INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
 # synth_design -top Eight_Digit_BCD_teller -part xc7a100tcsg324-1
@@ -44,34 +38,36 @@ Starting synthesis...
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 230.445 ; gain = 78.445
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 230.031 ; gain = 78.184
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'Eight_Digit_BCD_teller' [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/_Project/8BCD_005_teller-mux-samen/8BCD_005_teller-mux-samen.srcs/sources_1/new/8Digit_BCD_teller.vhd:27]
+INFO: [Synth 8-638] synthesizing module 'Eight_Digit_BCD_teller' [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V01/BCD_teller_V01.srcs/sources_1/new/8Digit_BCD_teller.vhd:29]
 	Parameter Dist1 bound to: 250000 - type: integer 
 	Parameter Dist2 bound to: 50000000 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'Scan_teller' [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/_Project/8BCD_005_teller-mux-samen/8BCD_005_teller-mux-samen.srcs/sources_1/new/Scan_teller.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'Scan_teller' [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V01/BCD_teller_V01.srcs/sources_1/new/Scan_teller.vhd:25]
 	Parameter Max_cntr1 bound to: 250000 - type: integer 
 	Parameter Max_cntr2 bound to: 50000000 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'Scan_teller' (1#1) [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/_Project/8BCD_005_teller-mux-samen/8BCD_005_teller-mux-samen.srcs/sources_1/new/Scan_teller.vhd:24]
-INFO: [Synth 8-638] synthesizing module 'MUX' [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/_Project/8BCD_005_teller-mux-samen/8BCD_005_teller-mux-samen.srcs/sources_1/new/MUX.vhd:22]
-INFO: [Synth 8-3491] module 'enkele_Teller' declared at 'V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/_Project/8BCD_005_teller-mux-samen/8BCD_005_teller-mux-samen.srcs/sources_1/new/Teller.vhd:14' bound to instance 'tel' of component 'enkele_Teller' [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/_Project/8BCD_005_teller-mux-samen/8BCD_005_teller-mux-samen.srcs/sources_1/new/MUX.vhd:41]
-INFO: [Synth 8-638] synthesizing module 'enkele_Teller' [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/_Project/8BCD_005_teller-mux-samen/8BCD_005_teller-mux-samen.srcs/sources_1/new/Teller.vhd:24]
-INFO: [Synth 8-256] done synthesizing module 'enkele_Teller' (2#1) [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/_Project/8BCD_005_teller-mux-samen/8BCD_005_teller-mux-samen.srcs/sources_1/new/Teller.vhd:24]
-INFO: [Synth 8-3491] module 'enkele_Teller' declared at 'V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/_Project/8BCD_005_teller-mux-samen/8BCD_005_teller-mux-samen.srcs/sources_1/new/Teller.vhd:14' bound to instance 'tel' of component 'enkele_Teller' [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/_Project/8BCD_005_teller-mux-samen/8BCD_005_teller-mux-samen.srcs/sources_1/new/MUX.vhd:47]
-INFO: [Synth 8-3491] module 'enkele_Teller' declared at 'V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/_Project/8BCD_005_teller-mux-samen/8BCD_005_teller-mux-samen.srcs/sources_1/new/Teller.vhd:14' bound to instance 'tel' of component 'enkele_Teller' [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/_Project/8BCD_005_teller-mux-samen/8BCD_005_teller-mux-samen.srcs/sources_1/new/MUX.vhd:47]
-INFO: [Synth 8-3491] module 'enkele_Teller' declared at 'V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/_Project/8BCD_005_teller-mux-samen/8BCD_005_teller-mux-samen.srcs/sources_1/new/Teller.vhd:14' bound to instance 'tel' of component 'enkele_Teller' [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/_Project/8BCD_005_teller-mux-samen/8BCD_005_teller-mux-samen.srcs/sources_1/new/MUX.vhd:47]
-INFO: [Synth 8-3491] module 'enkele_Teller' declared at 'V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/_Project/8BCD_005_teller-mux-samen/8BCD_005_teller-mux-samen.srcs/sources_1/new/Teller.vhd:14' bound to instance 'tel' of component 'enkele_Teller' [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/_Project/8BCD_005_teller-mux-samen/8BCD_005_teller-mux-samen.srcs/sources_1/new/MUX.vhd:47]
-INFO: [Synth 8-3491] module 'enkele_Teller' declared at 'V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/_Project/8BCD_005_teller-mux-samen/8BCD_005_teller-mux-samen.srcs/sources_1/new/Teller.vhd:14' bound to instance 'tel' of component 'enkele_Teller' [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/_Project/8BCD_005_teller-mux-samen/8BCD_005_teller-mux-samen.srcs/sources_1/new/MUX.vhd:47]
-INFO: [Synth 8-3491] module 'enkele_Teller' declared at 'V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/_Project/8BCD_005_teller-mux-samen/8BCD_005_teller-mux-samen.srcs/sources_1/new/Teller.vhd:14' bound to instance 'tel' of component 'enkele_Teller' [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/_Project/8BCD_005_teller-mux-samen/8BCD_005_teller-mux-samen.srcs/sources_1/new/MUX.vhd:47]
-INFO: [Synth 8-3491] module 'enkele_Teller' declared at 'V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/_Project/8BCD_005_teller-mux-samen/8BCD_005_teller-mux-samen.srcs/sources_1/new/Teller.vhd:14' bound to instance 'tel' of component 'enkele_Teller' [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/_Project/8BCD_005_teller-mux-samen/8BCD_005_teller-mux-samen.srcs/sources_1/new/MUX.vhd:47]
-INFO: [Synth 8-256] done synthesizing module 'MUX' (3#1) [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/_Project/8BCD_005_teller-mux-samen/8BCD_005_teller-mux-samen.srcs/sources_1/new/MUX.vhd:22]
-INFO: [Synth 8-638] synthesizing module 'DEMUX' [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/_Project/8BCD_005_teller-mux-samen/8BCD_005_teller-mux-samen.srcs/sources_1/new/DEMUX.vhd:17]
-INFO: [Synth 8-256] done synthesizing module 'DEMUX' (4#1) [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/_Project/8BCD_005_teller-mux-samen/8BCD_005_teller-mux-samen.srcs/sources_1/new/DEMUX.vhd:17]
-INFO: [Synth 8-638] synthesizing module 'Segment' [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/_Project/8BCD_005_teller-mux-samen/8BCD_005_teller-mux-samen.srcs/sources_1/new/Segment.vhd:19]
-INFO: [Synth 8-256] done synthesizing module 'Segment' (5#1) [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/_Project/8BCD_005_teller-mux-samen/8BCD_005_teller-mux-samen.srcs/sources_1/new/Segment.vhd:19]
-INFO: [Synth 8-256] done synthesizing module 'Eight_Digit_BCD_teller' (6#1) [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/_Project/8BCD_005_teller-mux-samen/8BCD_005_teller-mux-samen.srcs/sources_1/new/8Digit_BCD_teller.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'Scan_teller' (1#1) [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V01/BCD_teller_V01.srcs/sources_1/new/Scan_teller.vhd:25]
+INFO: [Synth 8-638] synthesizing module 'MUX' [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V01/BCD_teller_V01.srcs/sources_1/new/MUX.vhd:22]
+INFO: [Synth 8-3491] module 'enkele_Teller' declared at 'V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V01/BCD_teller_V01.srcs/sources_1/new/Teller.vhd:14' bound to instance 'tel' of component 'enkele_Teller' [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V01/BCD_teller_V01.srcs/sources_1/new/MUX.vhd:41]
+INFO: [Synth 8-638] synthesizing module 'enkele_Teller' [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V01/BCD_teller_V01.srcs/sources_1/new/Teller.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'enkele_Teller' (2#1) [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V01/BCD_teller_V01.srcs/sources_1/new/Teller.vhd:24]
+INFO: [Synth 8-3491] module 'enkele_Teller' declared at 'V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V01/BCD_teller_V01.srcs/sources_1/new/Teller.vhd:14' bound to instance 'tel' of component 'enkele_Teller' [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V01/BCD_teller_V01.srcs/sources_1/new/MUX.vhd:47]
+INFO: [Synth 8-3491] module 'enkele_Teller' declared at 'V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V01/BCD_teller_V01.srcs/sources_1/new/Teller.vhd:14' bound to instance 'tel' of component 'enkele_Teller' [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V01/BCD_teller_V01.srcs/sources_1/new/MUX.vhd:47]
+INFO: [Synth 8-3491] module 'enkele_Teller' declared at 'V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V01/BCD_teller_V01.srcs/sources_1/new/Teller.vhd:14' bound to instance 'tel' of component 'enkele_Teller' [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V01/BCD_teller_V01.srcs/sources_1/new/MUX.vhd:47]
+INFO: [Synth 8-3491] module 'enkele_Teller' declared at 'V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V01/BCD_teller_V01.srcs/sources_1/new/Teller.vhd:14' bound to instance 'tel' of component 'enkele_Teller' [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V01/BCD_teller_V01.srcs/sources_1/new/MUX.vhd:47]
+INFO: [Synth 8-3491] module 'enkele_Teller' declared at 'V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V01/BCD_teller_V01.srcs/sources_1/new/Teller.vhd:14' bound to instance 'tel' of component 'enkele_Teller' [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V01/BCD_teller_V01.srcs/sources_1/new/MUX.vhd:47]
+INFO: [Synth 8-3491] module 'enkele_Teller' declared at 'V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V01/BCD_teller_V01.srcs/sources_1/new/Teller.vhd:14' bound to instance 'tel' of component 'enkele_Teller' [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V01/BCD_teller_V01.srcs/sources_1/new/MUX.vhd:47]
+INFO: [Synth 8-3491] module 'enkele_Teller' declared at 'V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V01/BCD_teller_V01.srcs/sources_1/new/Teller.vhd:14' bound to instance 'tel' of component 'enkele_Teller' [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V01/BCD_teller_V01.srcs/sources_1/new/MUX.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'MUX' (3#1) [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V01/BCD_teller_V01.srcs/sources_1/new/MUX.vhd:22]
+INFO: [Synth 8-638] synthesizing module 'DEMUX' [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V01/BCD_teller_V01.srcs/sources_1/new/DEMUX.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'DEMUX' (4#1) [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V01/BCD_teller_V01.srcs/sources_1/new/DEMUX.vhd:17]
+INFO: [Synth 8-638] synthesizing module 'Segment' [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V01/BCD_teller_V01.srcs/sources_1/new/Segment.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'Segment' (5#1) [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V01/BCD_teller_V01.srcs/sources_1/new/Segment.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'Eight_Digit_BCD_teller' (6#1) [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V01/BCD_teller_V01.srcs/sources_1/new/8Digit_BCD_teller.vhd:29]
+WARNING: [Synth 8-3331] design Eight_Digit_BCD_teller has unconnected port test
+WARNING: [Synth 8-3331] design Eight_Digit_BCD_teller has unconnected port zero
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 254.063 ; gain = 102.063
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 254.652 ; gain = 102.805
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Optimization
@@ -92,8 +88,8 @@ Loading io standards from C:/Xilinx/Vivado/2014.2/data\./parts/xilinx/artix7/IOS
 Loading device configuration modes from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/ConfigModes.xml
 
 Processing XDC Constraints
-Parsing XDC File [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/_Project/8BCD_005_teller-mux-samen/8BCD_005_teller-mux-samen.srcs/constrs_1/imports/Downloads/Nexys4_Master.xdc]
-Finished Parsing XDC File [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/_Project/8BCD_005_teller-mux-samen/8BCD_005_teller-mux-samen.srcs/constrs_1/imports/Downloads/Nexys4_Master.xdc]
+Parsing XDC File [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V01/BCD_teller_V01.srcs/constrs_1/imports/Downloads/Nexys4_Master.xdc]
+Finished Parsing XDC File [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V01/BCD_teller_V01.srcs/constrs_1/imports/Downloads/Nexys4_Master.xdc]
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
@@ -107,16 +103,16 @@ Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 383.258 ; gain = 231.258
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 383.941 ; gain = 232.094
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 383.258 ; gain = 231.258
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 383.941 ; gain = 232.094
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 383.258 ; gain = 231.258
+Finished RTL Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 383.941 ; gain = 232.094
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -185,14 +181,16 @@ BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Workers Ready, Starting Parallel Section  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 389.648 ; gain = 237.648
+Workers Ready, Starting Parallel Section  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 387.613 ; gain = 235.766
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design Eight_Digit_BCD_teller has unconnected port test
+WARNING: [Synth 8-3331] design Eight_Digit_BCD_teller has unconnected port zero
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 389.664 ; gain = 237.664
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 387.633 ; gain = 235.785
 ---------------------------------------------------------------------------------
-Finished Parallel Reinfer  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 389.664 ; gain = 237.664
+Finished Parallel Reinfer  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 387.633 ; gain = 235.785
 ---------------------------------------------------------------------------------
 Start RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
@@ -203,10 +201,10 @@ Finished RAM, DSP and Shift Register Reporting
 Start Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 398.113 ; gain = 246.113
+Finished Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 397.668 ; gain = 245.820
 ---------------------------------------------------------------------------------
-Finished Parallel Area Opt  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 398.113 ; gain = 246.113
-Finished Parallel Section  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 398.113 ; gain = 246.113
+Finished Parallel Area Opt  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 397.668 ; gain = 245.820
+Finished Parallel Section  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 397.668 ; gain = 245.820
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
@@ -214,16 +212,16 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 440.652 ; gain = 288.652
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 440.730 ; gain = 288.883
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 440.652 ; gain = 288.652
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 440.730 ; gain = 288.883
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 447.371 ; gain = 295.371
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 447.344 ; gain = 295.496
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -241,7 +239,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 447.371 ; gain = 295.371
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 447.344 ; gain = 295.496
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -254,13 +252,13 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 447.371 ; gain = 295.371
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 447.344 ; gain = 295.496
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 447.371 ; gain = 295.371
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 447.344 ; gain = 295.496
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RAM, DSP and Shift Register Reporting
@@ -285,14 +283,14 @@ Report Cell Usage:
 |1     |BUFG   |     2|
 |2     |CARRY4 |    36|
 |3     |LUT1   |    40|
-|4     |LUT2   |   135|
+|4     |LUT2   |   128|
 |5     |LUT3   |     9|
 |6     |LUT4   |    16|
-|7     |LUT5   |    24|
-|8     |LUT6   |    15|
+|7     |LUT5   |    31|
+|8     |LUT6   |     8|
 |9     |MUXF7  |     4|
-|10    |FDCE   |    98|
-|11    |FDRE   |    46|
+|10    |FDCE   |   105|
+|11    |FDRE   |    39|
 |12    |IBUF   |     4|
 |13    |OBUF   |    17|
 +------+-------+------+
@@ -301,25 +299,25 @@ Report Instance Areas:
 +------+----------------------------+----------------+------+
 |      |Instance                    |Module          |Cells |
 +------+----------------------------+----------------+------+
-|1     |top                         |                |   446|
+|1     |top                         |                |   439|
 |2     |  Scan_teller               |Scan_teller     |   210|
 |3     |  demux                     |DEMUX           |     8|
-|4     |  mux                       |MUX             |   197|
-|5     |    \tellers[0].eerste.tel  |enkele_Teller   |    11|
-|6     |    \tellers[1].andere.tel  |enkele_Teller_0 |    11|
-|7     |    \tellers[2].andere.tel  |enkele_Teller_1 |    11|
-|8     |    \tellers[3].andere.tel  |enkele_Teller_2 |    19|
-|9     |    \tellers[4].andere.tel  |enkele_Teller_3 |    11|
-|10    |    \tellers[5].andere.tel  |enkele_Teller_4 |    11|
-|11    |    \tellers[6].andere.tel  |enkele_Teller_5 |    11|
+|4     |  mux                       |MUX             |   190|
+|5     |    \tellers[0].eerste.tel  |enkele_Teller   |    10|
+|6     |    \tellers[1].andere.tel  |enkele_Teller_0 |    10|
+|7     |    \tellers[2].andere.tel  |enkele_Teller_1 |    10|
+|8     |    \tellers[3].andere.tel  |enkele_Teller_2 |    18|
+|9     |    \tellers[4].andere.tel  |enkele_Teller_3 |    10|
+|10    |    \tellers[5].andere.tel  |enkele_Teller_4 |    10|
+|11    |    \tellers[6].andere.tel  |enkele_Teller_5 |    10|
 |12    |    \tellers[7].andere.tel  |enkele_Teller_6 |    12|
 |13    |  segment                   |Segment         |     8|
 +------+----------------------------+----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 447.371 ; gain = 295.371
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 447.344 ; gain = 295.496
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 447.371 ; gain = 295.371
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 447.344 ; gain = 295.496
 INFO: [Netlist 29-17] Analyzing 40 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
@@ -329,10 +327,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-29 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+29 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 447.371 ; gain = 246.797
+synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 447.344 ; gain = 246.813
 # write_checkpoint Eight_Digit_BCD_teller.dcp
 # report_utilization -file Eight_Digit_BCD_teller_utilization_synth.rpt -pb Eight_Digit_BCD_teller_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 447.371 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Thu Apr 13 17:09:36 2017...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 447.344 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat May 06 14:28:53 2017...

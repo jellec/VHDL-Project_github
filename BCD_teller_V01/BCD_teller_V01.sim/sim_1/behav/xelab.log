@@ -1,6 +1,6 @@
 Vivado Simulator 2014.2
 Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2014.2/bin/unwrapped/win32.o/xelab.exe --debug typical --relax --generic_top TB_Dist1=10 --generic_top TB_Dist2=20 -L xil_defaultlib -L secureip --snapshot testbench_behav --prj V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V01/BCD_teller_V01.sim/sim_1/behav/testbench.prj xil_defaultlib.testbench 
+Running: C:/Xilinx/Vivado/2014.2/bin/unwrapped/win32.o/xelab.exe --debug typical --relax -L xil_defaultlib -L secureip --snapshot testbench_behav --prj V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V01/BCD_teller_V01.sim/sim_1/behav/testbench.prj xil_defaultlib.testbench 
 Multi-threading is on. Using 3 slave threads.
 Determining compilation order of HDL files.
 INFO: [VRFC 10-165] Analyzing Verilog file "C:/Xilinx/Vivado/2014.2/data/verilog/src/glbl.v" into library xil_defaultlib
@@ -20,12 +20,12 @@ Time Resolution for simulation is 1ps
 Compiling package std.standard
 Compiling package ieee.std_logic_1164
 Compiling package ieee.numeric_std
-Compiling architecture behavioral of entity xil_defaultlib.Scan_teller [\Scan_teller(10,20)\]
+Compiling architecture behavioral of entity xil_defaultlib.Scan_teller [\Scan_teller(1,2)\]
 Compiling architecture behavioral of entity xil_defaultlib.enkele_Teller [enkele_teller_default]
 Compiling architecture behavioral of entity xil_defaultlib.MUX [mux_default]
 Compiling architecture behavioral of entity xil_defaultlib.DEMUX [demux_default]
 Compiling architecture segment of entity xil_defaultlib.Segment [segment_default]
-Compiling architecture behavioral of entity xil_defaultlib.Eight_Digit_BCD_teller [\Eight_Digit_BCD_teller(10,20)\]
+Compiling architecture behavioral of entity xil_defaultlib.Eight_Digit_BCD_teller [\Eight_Digit_BCD_teller(1,2)\]
 Compiling architecture tb_teller of entity xil_defaultlib.testbench
 Waiting for 1 sub-compilation(s) to finish...
 Built simulation snapshot testbench_behav

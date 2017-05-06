@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2014.2 (win32) Build 932637 Wed Jun 11 13:24:38 MDT 2014
-| Date         : Thu Apr 13 17:11:17 2017
+| Date         : Sat May 06 14:30:32 2017
 | Host         : JELLECOREMA4D78 running 32-bit major release  (build 7600)
 | Command      : report_timing_summary -warn_on_violation -file Eight_Digit_BCD_teller_timing_summary_routed.rpt -pb Eight_Digit_BCD_teller_timing_summary_routed.pb
 | Design       : Eight_Digit_BCD_teller
@@ -82,7 +82,7 @@ Table of Contents
 
 4. checking unconstrained_internal_endpoints
 --------------------------------------------
- There are 140 pins that are not constrained for maximum delay. (HIGH)
+ There are 147 pins that are not constrained for maximum delay. (HIGH)
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 
@@ -146,7 +146,7 @@ Table of Contents
 
     WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
     -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-      4.190        0.000                      0                   67        0.265        0.000                      0                   67        4.500        0.000                       0                    68  
+      4.365        0.000                      0                   67        0.266        0.000                      0                   67        4.500        0.000                       0                    68  
 
 
 All user specified timing constraints are met.
@@ -169,7 +169,7 @@ sys_clk_pin  {0.000 5.000}      10.000          100.000
 
 Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
 -----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-sys_clk_pin         4.190        0.000                      0                   67        0.265        0.000                      0                   67        4.500        0.000                       0                    68  
+sys_clk_pin         4.365        0.000                      0                   67        0.266        0.000                      0                   67        4.500        0.000                       0                    68  
 
 
 ------------------------------------------------------------------------------------------------
@@ -200,28 +200,28 @@ Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing 
 From Clock:  sys_clk_pin
   To Clock:  sys_clk_pin
 
-Setup :            0  Failing Endpoints,  Worst Slack        4.190ns,  Total Violation        0.000ns
-Hold  :            0  Failing Endpoints,  Worst Slack        0.265ns,  Total Violation        0.000ns
+Setup :            0  Failing Endpoints,  Worst Slack        4.365ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.266ns,  Total Violation        0.000ns
 PW    :            0  Failing Endpoints,  Worst Slack        4.500ns,  Total Violation        0.000ns
 ---------------------------------------------------------------------------------------------------
 
 
 Max Delay Paths
 --------------------------------------------------------------------------------------
-Slack (MET) :             4.190ns  (required time - arrival time)
-  Source:                 Scan_teller/cntr2_reg[5]/C
+Slack (MET) :             4.365ns  (required time - arrival time)
+  Source:                 Scan_teller/cntr2_reg[3]/C
                             (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Destination:            Scan_teller/cntr2_reg[29]/D
                             (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             sys_clk_pin
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        5.857ns  (logic 3.369ns (57.526%)  route 2.488ns (42.474%))
+  Data Path Delay:        5.645ns  (logic 3.456ns (61.222%)  route 2.189ns (38.778%))
   Logic Levels:           14  (CARRY4=12 LUT2=2)
-  Clock Path Skew:        -0.027ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    4.796ns = ( 14.796 - 10.000 ) 
-    Source Clock Delay      (SCD):    5.091ns
-    Clock Pessimism Removal (CPR):    0.268ns
+  Clock Path Skew:        -0.017ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.693ns = ( 14.693 - 10.000 ) 
+    Source Clock Delay      (SCD):    4.979ns
+    Clock Pessimism Removal (CPR):    0.269ns
   Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
     Total Input Jitter      (TIJ):    0.000ns
@@ -237,52 +237,52 @@ Slack (MET) :             4.190ns  (required time - arrival time)
     E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.780     3.262    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.358 r  clk_IBUF_BUFG_inst/O
-                         net (fo=67, routed)          1.732     5.091    Scan_teller/clk_IBUF_BUFG
-    SLICE_X88Y53                                                      r  Scan_teller/cntr2_reg[5]/C
+                         net (fo=67, routed)          1.620     4.979    Scan_teller/clk_IBUF_BUFG
+    SLICE_X71Y79                                                      r  Scan_teller/cntr2_reg[3]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X88Y53         FDCE (Prop_fdce_C_Q)         0.518     5.609 r  Scan_teller/cntr2_reg[5]/Q
-                         net (fo=3, routed)           1.114     6.723    Scan_teller/cntr2_reg[5]
-    SLICE_X89Y54         LUT2 (Prop_lut2_I1_O)        0.124     6.847 r  Scan_teller/count_out_i_31/O
-                         net (fo=1, routed)           0.000     6.847    Scan_teller/n_0_count_out_i_31
-    SLICE_X89Y54         CARRY4 (Prop_carry4_S[2]_CO[3])
-                                                      0.398     7.245 r  Scan_teller/count_out_reg_i_19/CO[3]
-                         net (fo=1, routed)           0.000     7.245    Scan_teller/n_0_count_out_reg_i_19
-    SLICE_X89Y55         CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114     7.359 r  Scan_teller/count_out_reg_i_10/CO[3]
-                         net (fo=1, routed)           0.000     7.359    Scan_teller/n_0_count_out_reg_i_10
-    SLICE_X89Y56         CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114     7.473 r  Scan_teller/count_out_reg_i_4/CO[3]
-                         net (fo=1, routed)           0.000     7.473    Scan_teller/n_0_count_out_reg_i_4
-    SLICE_X89Y57         CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114     7.587 r  Scan_teller/count_out_reg_i_3/CO[3]
-                         net (fo=35, routed)          1.373     8.960    Scan_teller/cntr21
-    SLICE_X88Y52         LUT2 (Prop_lut2_I0_O)        0.429     9.389 r  Scan_teller/cntr2[0]_i_5/O
-                         net (fo=1, routed)           0.000     9.389    Scan_teller/n_0_cntr2[0]_i_5
-    SLICE_X88Y52         CARRY4 (Prop_carry4_S[1]_CO[3])
-                                                      0.533     9.922 r  Scan_teller/cntr2_reg[0]_i_1/CO[3]
-                         net (fo=1, routed)           0.000     9.922    Scan_teller/n_0_cntr2_reg[0]_i_1
-    SLICE_X88Y53         CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117    10.039 r  Scan_teller/cntr2_reg[4]_i_1/CO[3]
-                         net (fo=1, routed)           0.000    10.039    Scan_teller/n_0_cntr2_reg[4]_i_1
-    SLICE_X88Y54         CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117    10.156 r  Scan_teller/cntr2_reg[8]_i_1/CO[3]
-                         net (fo=1, routed)           0.000    10.156    Scan_teller/n_0_cntr2_reg[8]_i_1
-    SLICE_X88Y55         CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117    10.273 r  Scan_teller/cntr2_reg[12]_i_1/CO[3]
-                         net (fo=1, routed)           0.000    10.273    Scan_teller/n_0_cntr2_reg[12]_i_1
-    SLICE_X88Y56         CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117    10.390 r  Scan_teller/cntr2_reg[16]_i_1/CO[3]
-                         net (fo=1, routed)           0.000    10.390    Scan_teller/n_0_cntr2_reg[16]_i_1
-    SLICE_X88Y57         CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117    10.507 r  Scan_teller/cntr2_reg[20]_i_1/CO[3]
-                         net (fo=1, routed)           0.000    10.507    Scan_teller/n_0_cntr2_reg[20]_i_1
-    SLICE_X88Y58         CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117    10.624 r  Scan_teller/cntr2_reg[24]_i_1/CO[3]
-                         net (fo=1, routed)           0.000    10.624    Scan_teller/n_0_cntr2_reg[24]_i_1
-    SLICE_X88Y59         CARRY4 (Prop_carry4_CI_O[1])
-                                                      0.323    10.947 r  Scan_teller/cntr2_reg[28]_i_1/O[1]
-                         net (fo=1, routed)           0.000    10.947    Scan_teller/n_6_cntr2_reg[28]_i_1
-    SLICE_X88Y59         FDCE                                         r  Scan_teller/cntr2_reg[29]/D
+    SLICE_X71Y79         FDCE (Prop_fdce_C_Q)         0.456     5.435 r  Scan_teller/cntr2_reg[3]/Q
+                         net (fo=3, routed)           0.825     6.259    Scan_teller/cntr2_reg[3]
+    SLICE_X70Y81         LUT2 (Prop_lut2_I1_O)        0.124     6.383 r  Scan_teller/count_out_i_32/O
+                         net (fo=1, routed)           0.000     6.383    Scan_teller/n_0_count_out_i_32
+    SLICE_X70Y81         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     6.916 r  Scan_teller/count_out_reg_i_19/CO[3]
+                         net (fo=1, routed)           0.000     6.916    Scan_teller/n_0_count_out_reg_i_19
+    SLICE_X70Y82         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     7.033 r  Scan_teller/count_out_reg_i_10/CO[3]
+                         net (fo=1, routed)           0.000     7.033    Scan_teller/n_0_count_out_reg_i_10
+    SLICE_X70Y83         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     7.150 r  Scan_teller/count_out_reg_i_4/CO[3]
+                         net (fo=1, routed)           0.000     7.150    Scan_teller/n_0_count_out_reg_i_4
+    SLICE_X70Y84         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     7.267 r  Scan_teller/count_out_reg_i_3/CO[3]
+                         net (fo=35, routed)          1.365     8.632    Scan_teller/cntr21
+    SLICE_X71Y79         LUT2 (Prop_lut2_I0_O)        0.424     9.056 r  Scan_teller/cntr2[0]_i_5/O
+                         net (fo=1, routed)           0.000     9.056    Scan_teller/n_0_cntr2[0]_i_5
+    SLICE_X71Y79         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550     9.606 r  Scan_teller/cntr2_reg[0]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     9.606    Scan_teller/n_0_cntr2_reg[0]_i_1
+    SLICE_X71Y80         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.720 r  Scan_teller/cntr2_reg[4]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     9.720    Scan_teller/n_0_cntr2_reg[4]_i_1
+    SLICE_X71Y81         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.834 r  Scan_teller/cntr2_reg[8]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     9.834    Scan_teller/n_0_cntr2_reg[8]_i_1
+    SLICE_X71Y82         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     9.948 r  Scan_teller/cntr2_reg[12]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     9.948    Scan_teller/n_0_cntr2_reg[12]_i_1
+    SLICE_X71Y83         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    10.062 r  Scan_teller/cntr2_reg[16]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    10.062    Scan_teller/n_0_cntr2_reg[16]_i_1
+    SLICE_X71Y84         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    10.176 r  Scan_teller/cntr2_reg[20]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    10.176    Scan_teller/n_0_cntr2_reg[20]_i_1
+    SLICE_X71Y85         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    10.290 r  Scan_teller/cntr2_reg[24]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    10.290    Scan_teller/n_0_cntr2_reg[24]_i_1
+    SLICE_X71Y86         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    10.624 r  Scan_teller/cntr2_reg[28]_i_1/O[1]
+                         net (fo=1, routed)           0.000    10.624    Scan_teller/n_6_cntr2_reg[28]_i_1
+    SLICE_X71Y86         FDCE                                         r  Scan_teller/cntr2_reg[29]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -292,16 +292,16 @@ Slack (MET) :             4.190ns  (required time - arrival time)
     E3                   IBUF (Prop_ibuf_I_O)         1.411    11.411 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.683    13.094    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    13.185 r  clk_IBUF_BUFG_inst/O
-                         net (fo=67, routed)          1.610    14.796    Scan_teller/clk_IBUF_BUFG
-    SLICE_X88Y59                                                      r  Scan_teller/cntr2_reg[29]/C
-                         clock pessimism              0.268    15.064    
-                         clock uncertainty           -0.035    15.028    
-    SLICE_X88Y59         FDCE (Setup_fdce_C_D)        0.109    15.137    Scan_teller/cntr2_reg[29]
+                         net (fo=67, routed)          1.507    14.693    Scan_teller/clk_IBUF_BUFG
+    SLICE_X71Y86                                                      r  Scan_teller/cntr2_reg[29]/C
+                         clock pessimism              0.269    14.962    
+                         clock uncertainty           -0.035    14.926    
+    SLICE_X71Y86         FDCE (Setup_fdce_C_D)        0.062    14.988    Scan_teller/cntr2_reg[29]
   -------------------------------------------------------------------
-                         required time                         15.137    
-                         arrival time                         -10.947    
+                         required time                         14.988    
+                         arrival time                         -10.624    
   -------------------------------------------------------------------
-                         slack                                  4.190    
+                         slack                                  4.365    
 
 
 
@@ -309,7 +309,7 @@ Slack (MET) :             4.190ns  (required time - arrival time)
 
 Min Delay Paths
 --------------------------------------------------------------------------------------
-Slack (MET) :             0.265ns  (arrival time - required time)
+Slack (MET) :             0.266ns  (arrival time - required time)
   Source:                 Scan_teller/ledON_reg/C
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Destination:            Scan_teller/ledON_reg/D
@@ -317,12 +317,12 @@ Slack (MET) :             0.265ns  (arrival time - required time)
   Path Group:             sys_clk_pin
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        0.356ns  (logic 0.186ns (52.300%)  route 0.170ns (47.700%))
+  Data Path Delay:        0.386ns  (logic 0.209ns (54.079%)  route 0.177ns (45.921%))
   Logic Levels:           1  (LUT3=1)
   Clock Path Skew:        0.000ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    1.949ns
-    Source Clock Delay      (SCD):    1.441ns
-    Clock Pessimism Removal (CPR):    0.507ns
+    Destination Clock Delay (DCD):    1.899ns
+    Source Clock Delay      (SCD):    1.393ns
+    Clock Pessimism Removal (CPR):    0.505ns
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
@@ -333,14 +333,14 @@ Slack (MET) :             0.265ns  (arrival time - required time)
     E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.558     0.808    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.834 r  clk_IBUF_BUFG_inst/O
-                         net (fo=67, routed)          0.608     1.441    Scan_teller/clk_IBUF_BUFG
-    SLICE_X87Y52                                                      r  Scan_teller/ledON_reg/C
+                         net (fo=67, routed)          0.560     1.393    Scan_teller/clk_IBUF_BUFG
+    SLICE_X70Y80                                                      r  Scan_teller/ledON_reg/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X87Y52         FDRE (Prop_fdre_C_Q)         0.141     1.582 r  Scan_teller/ledON_reg/Q
-                         net (fo=2, routed)           0.170     1.752    Scan_teller/O1
-    SLICE_X87Y52         LUT3 (Prop_lut3_I2_O)        0.045     1.797 r  Scan_teller/ledON_i_1/O
-                         net (fo=1, routed)           0.000     1.797    Scan_teller/n_0_ledON_i_1
-    SLICE_X87Y52         FDRE                                         r  Scan_teller/ledON_reg/D
+    SLICE_X70Y80         FDRE (Prop_fdre_C_Q)         0.164     1.557 r  Scan_teller/ledON_reg/Q
+                         net (fo=2, routed)           0.177     1.735    Scan_teller/O1
+    SLICE_X70Y80         LUT3 (Prop_lut3_I2_O)        0.045     1.780 r  Scan_teller/ledON_i_1/O
+                         net (fo=1, routed)           0.000     1.780    Scan_teller/n_0_ledON_i_1
+    SLICE_X70Y80         FDRE                                         r  Scan_teller/ledON_reg/D
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -350,15 +350,15 @@ Slack (MET) :             0.265ns  (arrival time - required time)
     E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.603     1.040    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.069 r  clk_IBUF_BUFG_inst/O
-                         net (fo=67, routed)          0.880     1.949    Scan_teller/clk_IBUF_BUFG
-    SLICE_X87Y52                                                      r  Scan_teller/ledON_reg/C
-                         clock pessimism             -0.507     1.441    
-    SLICE_X87Y52         FDRE (Hold_fdre_C_D)         0.091     1.532    Scan_teller/ledON_reg
+                         net (fo=67, routed)          0.830     1.899    Scan_teller/clk_IBUF_BUFG
+    SLICE_X70Y80                                                      r  Scan_teller/ledON_reg/C
+                         clock pessimism             -0.505     1.393    
+    SLICE_X70Y80         FDRE (Hold_fdre_C_D)         0.120     1.513    Scan_teller/ledON_reg
   -------------------------------------------------------------------
-                         required time                         -1.532    
-                         arrival time                           1.797    
+                         required time                         -1.513    
+                         arrival time                           1.780    
   -------------------------------------------------------------------
-                         slack                                  0.265    
+                         slack                                  0.266    
 
 
 
@@ -373,8 +373,8 @@ Sources:            { clk }
 
 Check Type        Corner  Lib Pin  Reference Pin  Required  Actual  Slack  Location        Pin
 Min Period        n/a     BUFG/I   n/a            2.155     10.000  7.845  BUFGCTRL_X0Y16  clk_IBUF_BUFG_inst/I
-Low Pulse Width   Fast    FDCE/C   n/a            0.500     5.000   4.500  SLICE_X88Y57    Scan_teller/cntr2_reg[20]/C
-High Pulse Width  Slow    FDCE/C   n/a            0.500     5.000   4.500  SLICE_X55Y53    Scan_teller/cntr1_reg[0]/C
+Low Pulse Width   Slow    FDCE/C   n/a            0.500     5.000   4.500  SLICE_X71Y84    Scan_teller/cntr2_reg[20]/C
+High Pulse Width  Slow    FDCE/C   n/a            0.500     5.000   4.500  SLICE_X71Y85    Scan_teller/cntr2_reg[24]/C
 
 
 

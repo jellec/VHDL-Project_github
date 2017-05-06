@@ -32,4 +32,4 @@ ExecStep()
    fi
 }
 
-ExecStep xelab -m32 --debug typical --relax --generic_top "TB_Dist1=10" --generic_top "TB_Dist2=20" -L xil_defaultlib -L secureip --snapshot testbench_behav --prj V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V01/BCD_teller_V01.sim/sim_1/behav/testbench.prj   xil_defaultlib.testbench
+ExecStep xelab -m32 --debug typical --relax -L xil_defaultlib -L secureip --snapshot testbench_behav --prj V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V01/BCD_teller_V01.sim/sim_1/behav/testbench.prj   xil_defaultlib.testbench

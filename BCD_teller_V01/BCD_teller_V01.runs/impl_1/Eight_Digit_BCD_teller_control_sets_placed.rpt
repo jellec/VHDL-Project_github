@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2014.2 (win32) Build 932637 Wed Jun 11 13:24:38 MDT 2014
-| Date         : Thu Apr 13 17:10:24 2017
+| Date         : Sat May 06 14:29:44 2017
 | Host         : JELLECOREMA4D78 running 32-bit major release  (build 7600)
 | Command      : report_control_sets -verbose -file Eight_Digit_BCD_teller_control_sets_placed.rpt
 | Design       : Eight_Digit_BCD_teller
@@ -22,8 +22,8 @@ Table of Contents
 +-------------------------------------------------------------------+-------+
 |                               Status                              | Count |
 +-------------------------------------------------------------------+-------+
-| Number of unique control sets                                     |    19 |
-| Minimum Number of register sites lost to control set restrictions |    96 |
+| Number of unique control sets                                     |    12 |
+| Minimum Number of register sites lost to control set restrictions |    40 |
 +-------------------------------------------------------------------+-------+
 
 
@@ -33,8 +33,8 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              15 |           11 |
-| No           | No                    | Yes                    |              98 |           26 |
+| No           | No                    | No                     |               8 |            4 |
+| No           | No                    | Yes                    |             105 |           26 |
 | No           | Yes                   | No                     |              31 |            8 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
@@ -48,22 +48,15 @@ Table of Contents
 +--------------------------------------+---------------+-------------------------------+------------------+----------------+
 |             Clock Signal             | Enable Signal |        Set/Reset Signal       | Slice Load Count | Bel Load Count |
 +--------------------------------------+---------------+-------------------------------+------------------+----------------+
-|  mux/tellers[0].eerste.tel/carry_out |               |                               |                1 |              1 |
-|  mux/tellers[1].andere.tel/O1        |               |                               |                1 |              1 |
-|  mux/tellers[2].andere.tel/O1        |               |                               |                1 |              1 |
-|  mux/tellers[3].andere.tel/O1        |               |                               |                1 |              1 |
-|  mux/tellers[5].andere.tel/O1        |               |                               |                1 |              1 |
-|  mux/tellers[4].andere.tel/O1        |               |                               |                1 |              1 |
-|  Scan_teller/count_out               |               |                               |                1 |              1 |
 |  clk_IBUF_BUFG                       |               |                               |                1 |              1 |
-|  mux/tellers[0].eerste.tel/carry_out |               | tel_rst_IBUF                  |                1 |              4 |
-|  mux/tellers[1].andere.tel/O1        |               | tel_rst_IBUF                  |                1 |              4 |
-|  mux/tellers[2].andere.tel/O1        |               | tel_rst_IBUF                  |                1 |              4 |
-|  mux/tellers[3].andere.tel/O1        |               | tel_rst_IBUF                  |                1 |              4 |
 |  mux/tellers[6].andere.tel/O1        |               | tel_rst_IBUF                  |                1 |              4 |
-|  mux/tellers[5].andere.tel/O1        |               | tel_rst_IBUF                  |                1 |              4 |
-|  mux/tellers[4].andere.tel/O1        |               | tel_rst_IBUF                  |                1 |              4 |
-|  Scan_teller/count_out               |               | tel_rst_IBUF                  |                1 |              4 |
+|  Scan_teller/count_out               |               | tel_rst_IBUF                  |                1 |              5 |
+|  mux/tellers[0].eerste.tel/carry_out |               | tel_rst_IBUF                  |                1 |              5 |
+|  mux/tellers[1].andere.tel/O1        |               | tel_rst_IBUF                  |                1 |              5 |
+|  mux/tellers[2].andere.tel/O1        |               | tel_rst_IBUF                  |                1 |              5 |
+|  mux/tellers[3].andere.tel/O1        |               | tel_rst_IBUF                  |                1 |              5 |
+|  mux/tellers[4].andere.tel/O1        |               | tel_rst_IBUF                  |                1 |              5 |
+|  mux/tellers[5].andere.tel/O1        |               | tel_rst_IBUF                  |                1 |              5 |
 |  scan_out_BUFG                       |               |                               |                3 |              7 |
 |  scan_out_BUFG                       |               | mux/n_0_count[0]_i_1          |                8 |             31 |
 |  clk_IBUF_BUFG                       |               | Scan_teller/n_0_count_out_i_2 |               18 |             66 |

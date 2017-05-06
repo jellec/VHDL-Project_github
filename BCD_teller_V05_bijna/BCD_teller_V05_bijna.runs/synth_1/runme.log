@@ -1,0 +1,329 @@
+
+*** Running vivado
+    with args -log Eight_Digit_BCD_teller.vds -m32 -mode batch -messageDb vivado.pb -source Eight_Digit_BCD_teller.tcl
+
+
+****** Vivado v2014.2
+  **** SW Build 932637 on Wed Jun 11 13:24:38 MDT 2014
+  **** IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source Eight_Digit_BCD_teller.tcl
+# set_param gui.test TreeTableDev
+# set_param xicom.use_bs_reader 1
+# set_msg_config -id {Common-41} -limit 4294967295
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# set_msg_config -id {Labtools 27-147} -limit 4294967295
+# set_msg_config  -id {Common 17-9}  -string {{ERROR: [Common 17-9] Error reading message records.}}  -suppress 
+# create_project -in_memory -part xc7a100tcsg324-1
+# set_property target_language VHDL [current_project]
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_property default_lib xil_defaultlib [current_project]
+# read_vhdl -library xil_defaultlib {
+#   V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V04a/BCD_teller_V04a.srcs/sources_1/new/Teller.vhd
+#   V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V04a/BCD_teller_V04a.srcs/sources_1/new/Segment.vhd
+#   V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V04a/BCD_teller_V04a.srcs/sources_1/new/Scan_teller.vhd
+#   V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V04a/BCD_teller_V04a.srcs/sources_1/new/MUX.vhd
+#   V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V04a/BCD_teller_V04a.srcs/sources_1/new/DEMUX.vhd
+#   V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V04a/BCD_teller_V04a.srcs/sources_1/new/8Digit_BCD_teller.vhd
+# }
+# read_xdc V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V04a/BCD_teller_V04a.srcs/constrs_1/imports/Downloads/Nexys4_Master.xdc
+# set_property used_in_implementation false [get_files V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V04a/BCD_teller_V04a.srcs/constrs_1/imports/Downloads/Nexys4_Master.xdc]
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V04a/BCD_teller_V04a.cache/wt [current_project]
+# set_property parent.project_dir V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V04a [current_project]
+# catch { write_hwdef -file Eight_Digit_BCD_teller.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top Eight_Digit_BCD_teller -part xc7a100tcsg324-1 -flatten_hierarchy none -directive RuntimeOptimized -fsm_extraction off
+Command: synth_design -top Eight_Digit_BCD_teller -part xc7a100tcsg324-1 -flatten_hierarchy none -directive RuntimeOptimized -fsm_extraction off
+
+Starting synthesis...
+
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 229.906 ; gain = 78.492
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Eight_Digit_BCD_teller' [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V04a/BCD_teller_V04a.srcs/sources_1/new/8Digit_BCD_teller.vhd:29]
+	Parameter Dist1 bound to: 250000 - type: integer 
+	Parameter Dist2 bound to: 25000000 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Scan_teller' [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V04a/BCD_teller_V04a.srcs/sources_1/new/Scan_teller.vhd:24]
+	Parameter Max_cntr1 bound to: 250000 - type: integer 
+	Parameter Max_cntr2 bound to: 25000000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Scan_teller' (1#1) [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V04a/BCD_teller_V04a.srcs/sources_1/new/Scan_teller.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'MUX' [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V04a/BCD_teller_V04a.srcs/sources_1/new/MUX.vhd:26]
+INFO: [Synth 8-3491] module 'enkele_Teller' declared at 'V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V04a/BCD_teller_V04a.srcs/sources_1/new/Teller.vhd:14' bound to instance 'tel' of component 'enkele_Teller' [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V04a/BCD_teller_V04a.srcs/sources_1/new/MUX.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'enkele_Teller' [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V04a/BCD_teller_V04a.srcs/sources_1/new/Teller.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'enkele_Teller' (2#1) [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V04a/BCD_teller_V04a.srcs/sources_1/new/Teller.vhd:24]
+INFO: [Synth 8-3491] module 'enkele_Teller' declared at 'V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V04a/BCD_teller_V04a.srcs/sources_1/new/Teller.vhd:14' bound to instance 'tel' of component 'enkele_Teller' [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V04a/BCD_teller_V04a.srcs/sources_1/new/MUX.vhd:53]
+INFO: [Synth 8-3491] module 'enkele_Teller' declared at 'V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V04a/BCD_teller_V04a.srcs/sources_1/new/Teller.vhd:14' bound to instance 'tel' of component 'enkele_Teller' [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V04a/BCD_teller_V04a.srcs/sources_1/new/MUX.vhd:53]
+INFO: [Synth 8-3491] module 'enkele_Teller' declared at 'V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V04a/BCD_teller_V04a.srcs/sources_1/new/Teller.vhd:14' bound to instance 'tel' of component 'enkele_Teller' [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V04a/BCD_teller_V04a.srcs/sources_1/new/MUX.vhd:53]
+INFO: [Synth 8-3491] module 'enkele_Teller' declared at 'V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V04a/BCD_teller_V04a.srcs/sources_1/new/Teller.vhd:14' bound to instance 'tel' of component 'enkele_Teller' [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V04a/BCD_teller_V04a.srcs/sources_1/new/MUX.vhd:53]
+INFO: [Synth 8-3491] module 'enkele_Teller' declared at 'V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V04a/BCD_teller_V04a.srcs/sources_1/new/Teller.vhd:14' bound to instance 'tel' of component 'enkele_Teller' [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V04a/BCD_teller_V04a.srcs/sources_1/new/MUX.vhd:53]
+INFO: [Synth 8-3491] module 'enkele_Teller' declared at 'V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V04a/BCD_teller_V04a.srcs/sources_1/new/Teller.vhd:14' bound to instance 'tel' of component 'enkele_Teller' [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V04a/BCD_teller_V04a.srcs/sources_1/new/MUX.vhd:53]
+INFO: [Synth 8-3491] module 'enkele_Teller' declared at 'V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V04a/BCD_teller_V04a.srcs/sources_1/new/Teller.vhd:14' bound to instance 'tel' of component 'enkele_Teller' [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V04a/BCD_teller_V04a.srcs/sources_1/new/MUX.vhd:53]
+INFO: [Synth 8-256] done synthesizing module 'MUX' (3#1) [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V04a/BCD_teller_V04a.srcs/sources_1/new/MUX.vhd:26]
+INFO: [Synth 8-638] synthesizing module 'DEMUX' [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V04a/BCD_teller_V04a.srcs/sources_1/new/DEMUX.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'DEMUX' (4#1) [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V04a/BCD_teller_V04a.srcs/sources_1/new/DEMUX.vhd:17]
+INFO: [Synth 8-638] synthesizing module 'Segment' [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V04a/BCD_teller_V04a.srcs/sources_1/new/Segment.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'Segment' (5#1) [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V04a/BCD_teller_V04a.srcs/sources_1/new/Segment.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'Eight_Digit_BCD_teller' (6#1) [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V04a/BCD_teller_V04a.srcs/sources_1/new/8Digit_BCD_teller.vhd:29]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 254.020 ; gain = 102.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Optimization
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+Loading clock regions from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/artix7/xc7a100t/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/artix7/xc7a100t/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.2/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/artix7/xc7a100t/csg324/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.2/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/ConfigModes.xml
+
+Processing XDC Constraints
+Parsing XDC File [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V04a/BCD_teller_V04a.srcs/constrs_1/imports/Downloads/Nexys4_Master.xdc]
+Finished Parsing XDC File [V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V04a/BCD_teller_V04a.srcs/constrs_1/imports/Downloads/Nexys4_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+---------------------------------------------------------------------------------
+Start RTL Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 383.379 ; gain = 231.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 383.379 ; gain = 231.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 383.379 ; gain = 231.965
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 9     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	  13 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 7     
+	  11 Input      4 Bit        Muxes := 16    
+	   2 Input      4 Bit        Muxes := 12    
+	   2 Input      1 Bit        Muxes := 24    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Eight_Digit_BCD_teller 
+Detailed RTL Component Info : 
+Module Scan_teller 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module enkele_Teller 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+Module MUX 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 7     
+	   2 Input      4 Bit        Muxes := 4     
+Module DEMUX 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+Module Segment 
+Detailed RTL Component Info : 
++---Muxes : 
+	  13 Input      8 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Workers Ready, Starting Parallel Section  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 390.488 ; gain = 239.074
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 390.488 ; gain = 239.074
+---------------------------------------------------------------------------------
+Finished Parallel Reinfer  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 390.488 ; gain = 239.074
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 399.848 ; gain = 248.434
+---------------------------------------------------------------------------------
+Finished Parallel Area Opt  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 399.848 ; gain = 248.434
+Finished Parallel Section  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 399.848 ; gain = 248.434
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 440.637 ; gain = 289.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 440.637 ; gain = 289.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 445.746 ; gain = 294.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 445.746 ; gain = 294.332
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 445.746 ; gain = 294.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    36|
+|3     |LUT1   |    38|
+|4     |LUT2   |   132|
+|5     |LUT3   |     9|
+|6     |LUT4   |    20|
+|7     |LUT5   |    36|
+|8     |LUT6   |    18|
+|9     |MUXF7  |     4|
+|10    |FDCE   |   106|
+|11    |FDRE   |    38|
+|12    |IBUF   |     6|
+|13    |OBUF   |    24|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------------------------+-----------------+------+
+|      |Instance                    |Module           |Cells |
++------+----------------------------+-----------------+------+
+|1     |top                         |                 |   468|
+|2     |  Scan_teller               |Scan_teller      |   208|
+|3     |  mux                       |MUX              |   213|
+|4     |    \tellers[0].eerste.tel  |enkele_Teller__1 |    10|
+|5     |    \tellers[1].andere.tel  |enkele_Teller__2 |    10|
+|6     |    \tellers[2].andere.tel  |enkele_Teller__3 |    10|
+|7     |    \tellers[3].andere.tel  |enkele_Teller__4 |    10|
+|8     |    \tellers[4].andere.tel  |enkele_Teller__5 |    10|
+|9     |    \tellers[5].andere.tel  |enkele_Teller__6 |    10|
+|10    |    \tellers[6].andere.tel  |enkele_Teller__7 |    10|
+|11    |    \tellers[7].andere.tel  |enkele_Teller    |    10|
+|12    |  demux                     |DEMUX            |     8|
+|13    |  segment                   |Segment          |     8|
++------+----------------------------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 445.746 ; gain = 294.332
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 445.746 ; gain = 294.332
+INFO: [Netlist 29-17] Analyzing 42 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+29 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 445.746 ; gain = 245.465
+# write_checkpoint Eight_Digit_BCD_teller.dcp
+# report_utilization -file Eight_Digit_BCD_teller_utilization_synth.rpt -pb Eight_Digit_BCD_teller_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 445.746 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat May 06 18:47:30 2017...

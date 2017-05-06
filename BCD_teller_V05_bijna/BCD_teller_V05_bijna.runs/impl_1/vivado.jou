@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.2
+# SW Build 932637 on Wed Jun 11 13:24:38 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Sat May 06 18:51:04 2017
+# Process ID: 5096
+# Log file: V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V05_bijna/BCD_teller_V05_bijna.runs/impl_1/Eight_Digit_BCD_teller.vdi
+# Journal file: V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V05_bijna/BCD_teller_V05_bijna.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Eight_Digit_BCD_teller.tcl -notrace

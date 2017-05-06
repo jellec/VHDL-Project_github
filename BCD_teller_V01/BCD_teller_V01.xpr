@@ -102,9 +102,8 @@
         <Option Name="TopModule" Val="testbench"/>
         <Option Name="TopLib" Val="xil_defaultlib"/>
         <Option Name="TopAutoSet" Val="TRUE"/>
+        <Option Name="SimulationRunTime" Val="3000ns"/>
         <Option Name="SrcSet" Val="sources_1"/>
-        <Generic Name="TB_Dist1" Val="10"/>
-        <Generic Name="TB_Dist2" Val="20"/>
       </Config>
     </FileSet>
   </FileSets>
@@ -133,4 +132,15 @@
     </Run>
   </Runs>
   <HWSession Dir="hw_1" File="hw.xml"/>
+  <MsgRule>
+    <MsgAttr Name="RuleType" Val="0"/>
+    <MsgAttr Name="Limit" Val="-1"/>
+    <MsgAttr Name="NewSeverity" Val="ANY"/>
+    <MsgAttr Name="Id" Val="Common 17-9"/>
+    <MsgAttr Name="Severity" Val="ANY"/>
+    <MsgAttr Name="ShowRule" Val="1"/>
+    <MsgAttr Name="RuleSource" Val="8"/>
+    <MsgAttr Name="StringIsRegExp" Val="0"/>
+    <MsgAttr Name="StringsToMatch" Val="ERROR: [Common 17-9] Error reading message records."/>
+  </MsgRule>
 </Project>

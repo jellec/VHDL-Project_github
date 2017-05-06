@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1492096181">
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1494073746">
   <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
   <File Type="PWROPT-DCP" Name="Eight_Digit_BCD_teller_pwropt.dcp"/>
   <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
-  <File Type="OPT-DRC" Name="Eight_Digit_BCD_teller_drc_opted.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="Eight_Digit_BCD_teller_timing_summary_routed.pb"/>
   <File Type="PA-TCL" Name="Eight_Digit_BCD_teller.tcl"/>
+  <File Type="OPT-DRC" Name="Eight_Digit_BCD_teller_drc_opted.rpt"/>
   <File Type="OPT-DCP" Name="Eight_Digit_BCD_teller_opt.dcp"/>
   <File Type="PWROPT-DRC" Name="Eight_Digit_BCD_teller_drc_pwropted.rpt"/>
   <File Type="PLACE-DCP" Name="Eight_Digit_BCD_teller_placed.dcp"/>
@@ -30,8 +30,8 @@
   <File Type="ROUTE-SIMILARITY" Name="Eight_Digit_BCD_teller_incremental_reuse_routed.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="Eight_Digit_BCD_teller_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Eight_Digit_BCD_teller_timing_summary_postroute_physopted.rpt"/>
-  <File Type="RDI-RDI" Name="Eight_Digit_BCD_teller.vdi"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Eight_Digit_BCD_teller_timing_summary_postroute_physopted.pb"/>
+  <File Type="RDI-RDI" Name="Eight_Digit_BCD_teller.vdi"/>
   <File Type="BG-BIT" Name="Eight_Digit_BCD_teller.bit"/>
   <File Type="BG-BIN" Name="Eight_Digit_BCD_teller.bin"/>
   <File Type="BITSTR-MSK" Name="Eight_Digit_BCD_teller.msk"/>

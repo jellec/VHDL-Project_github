@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------
 | Tool Version : Vivado v.2014.2 (win32) Build 932637 Wed Jun 11 13:24:38 MDT 2014
-| Date         : Thu Apr 13 17:10:23 2017
+| Date         : Sat May 06 14:29:43 2017
 | Host         : JELLECOREMA4D78 running 32-bit major release  (build 7600)
 | Command      : report_io -file Eight_Digit_BCD_teller_io_placed.rpt
 | Design       : Eight_Digit_BCD_teller
@@ -23,7 +23,7 @@ Table of Contents
 +---------------+
 | Total User IO |
 +---------------+
-|            21 |
+|            23 |
 +---------------+
 
 
@@ -328,8 +328,8 @@ Table of Contents
 | U5         |             | High Range | VCCO_34                      | VCCO        |             |      34 |            |      |                     |                      |    3.30 |            |           |      |                  |
 | U6         |             | High Range | IO_L22N_T3_34                | User IO     |             |      34 |            |      |                     |                      |         |            |           |      |                  |
 | U7         |             | High Range | IO_L22P_T3_34                | User IO     |             |      34 |            |      |                     |                      |         |            |           |      |                  |
-| U8         |             | High Range | IO_25_34                     | User IO     |             |      34 |            |      |                     |                      |         |            |           |      |                  |
-| U9         |             | High Range | IO_L21P_T3_DQS_34            | User IO     |             |      34 |            |      |                     |                      |         |            |           |      |                  |
+| U8         | zero        | High Range | IO_25_34                     | INPUT       | LVCMOS33    |      34 |            |      |                     |                 NONE |         | FIXED      |           |      | NONE             |
+| U9         | test        | High Range | IO_L21P_T3_DQS_34            | INPUT       | LVCMOS33    |      34 |            |      |                     |                 NONE |         | FIXED      |           |      | NONE             |
 | U10        |             |            | GND                          | GND         |             |         |            |      |                     |                      |     0.0 |            |           |      |                  |
 | U11        |             | High Range | IO_L19N_T3_A09_D25_VREF_14   | User IO     |             |      14 |            |      |                     |                      |         |            |           |      |                  |
 | U12        |             | High Range | IO_L20P_T3_A08_D24_14        | User IO     |             |      14 |            |      |                     |                      |         |            |           |      |                  |

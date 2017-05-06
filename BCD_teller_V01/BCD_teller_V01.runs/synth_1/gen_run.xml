@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1492096133">
-  <File Type="RDS-UTIL-PB" Name="Eight_Digit_BCD_teller_utilization_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1494073692">
   <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/synth_1/constrs_in.xml"/>
-  <File Type="RDS-UTIL" Name="Eight_Digit_BCD_teller_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="Eight_Digit_BCD_teller_utilization_synth.pb"/>
   <File Type="RUN-SRCS" Name="$PDATADIR/runs/synth_1/sources.xml"/>
+  <File Type="RDS-UTIL" Name="Eight_Digit_BCD_teller_utilization_synth.rpt"/>
   <File Type="RUN-STRAT" Name="$PDATADIR/runs/synth_1/synth_1.psg"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="Eight_Digit_BCD_teller_timing_summary_synth.rpt"/>
   <File Type="PA-TCL" Name="Eight_Digit_BCD_teller.tcl"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="Eight_Digit_BCD_teller_timing_summary_synth.rpt"/>
   <File Type="RDS-RDS" Name="Eight_Digit_BCD_teller.vds"/>
   <File Type="RDS-DCP" Name="Eight_Digit_BCD_teller.dcp"/>
   <File Type="VDS-TIMING-PB" Name="Eight_Digit_BCD_teller_timing_summary_synth.pb"/>
