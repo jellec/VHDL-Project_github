@@ -1,0 +1,1 @@
+--debug "typical" --relax --generic_top "TB_Dist1=2" --generic_top "TB_Dist2=2" -L "xil_defaultlib" -L "secureip" --snapshot "testbench_behav" --prj "V:/4_VHDL_labo/__OPDRACHTEN/VHDL_C/VHDL-Project_github/BCD_teller_V05_bijna/BCD_teller_V05_bijna.sim/sim_1/behav/testbench.prj" "xil_defaultlib.testbench" 

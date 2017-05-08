@@ -56,16 +56,17 @@ begin
           
     end generate tellers;
 
-    led <= carry_temp;
+    led <= carry_temp;      -- debug --> carry blijft hoog zolang vorige teller een nul is
 
     process(scan_in)
     variable count :Natural := 0;
     begin
-        if rising_edge(scan_in) then          
+        if rst = '0' then
+            BCD_out <= x"E";    -- alles uit bij reset - asynchroon
             
-            if rst = '0' then
-                BCD_out <= x"E";    -- alles uit bij reset
-            elsif test = '1' then
+        elsif rising_edge(scan_in) then          
+          
+            if test = '1' then
                 BCD_out <= x"F";    -- alles aan bij disp test
             elsif zero = '0' then
                     BCD_out <= BCDarray(count);

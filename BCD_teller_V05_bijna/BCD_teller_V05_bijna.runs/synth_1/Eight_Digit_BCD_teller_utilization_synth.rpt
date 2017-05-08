@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2014.2 (win32) Build 932637 Wed Jun 11 13:24:38 MDT 2014
-| Date         : Sat May 06 18:47:30 2017
+| Date         : Tue May 09 01:13:19 2017
 | Host         : JELLECOREMA4D78 running 32-bit major release  (build 7600)
 | Command      : report_utilization -file Eight_Digit_BCD_teller_utilization_synth.rpt -pb Eight_Digit_BCD_teller_utilization_synth.pb
 | Design       : Eight_Digit_BCD_teller
@@ -127,18 +127,19 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| LUT2     |  132 |                 LUT |
-| FDCE     |  106 |        Flop & Latch |
+| LUT2     |  133 |                 LUT |
+| FDCE     |  107 |        Flop & Latch |
 | LUT1     |   38 |                 LUT |
-| FDRE     |   38 |        Flop & Latch |
-| LUT5     |   36 |                 LUT |
 | CARRY4   |   36 |          CarryLogic |
+| LUT5     |   35 |                 LUT |
+| FDRE     |   34 |        Flop & Latch |
 | OBUF     |   24 |                  IO |
-| LUT4     |   20 |                 LUT |
-| LUT6     |   18 |                 LUT |
-| LUT3     |    9 |                 LUT |
+| LUT4     |   22 |                 LUT |
+| LUT6     |   15 |                 LUT |
+| LUT3     |   11 |                 LUT |
 | IBUF     |    6 |                  IO |
 | MUXF7    |    4 |               MuxFx |
+| FDPE     |    3 |        Flop & Latch |
 | BUFG     |    1 |               Clock |
 +----------+------+---------------------+
 
